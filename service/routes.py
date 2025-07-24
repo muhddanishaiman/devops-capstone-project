@@ -74,6 +74,7 @@ def list_accounts():
 # READ AN ACCOUNT
 ######################################################################
 
+
 @app.route("/accounts/<int:account_id>", methods=["GET"])
 def read_account(account_id):
     app.logger.info("Request to read an Account with id: %s", account_id)
